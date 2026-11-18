@@ -1,3 +1,7 @@
+
+
+# We make components executable through a standard interface called Runnable, so we can connect multiple components and execute them together as a chain.
+
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -23,3 +27,6 @@ prompt2 = PromptTemplate(
 chain = RunnableSequence(prompt1, model, parser, prompt2, model, parser)
 
 print(chain.invoke({'topic':'AI'}))
+
+
+
