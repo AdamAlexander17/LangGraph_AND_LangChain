@@ -1,4 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+
+
+
 # chat template
 chat_template = ChatPromptTemplate([
     ('system','You are a helpful customer support agent'),

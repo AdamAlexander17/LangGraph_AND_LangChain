@@ -1,6 +1,9 @@
-
-
-# We make components executable through a standard interface called Runnable, so we can connect multiple components and execute them together as a chain.
+# We make components executable through a standard interface called Runnable, 
+# so we can connect multiple components and execute them together as a chain.
+# A Runnable is a standard interface that makes components executable 
+# and allows us to connect them into a chain that can run as one workflow.
+# One small detail: each component can also execute independently. 
+# You don't need to connect multiple components to use a Runnable
 
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
